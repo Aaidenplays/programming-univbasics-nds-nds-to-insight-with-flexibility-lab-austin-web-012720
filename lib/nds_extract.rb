@@ -98,14 +98,14 @@ def movies_with_directors_set(source)
   # * source: An Array of Hashes containing director information including
   # :name and :movies
   #
-  
+  movie_index = 0
   result = []
   director_index = 0 
   while director_index < source.size
-  movie_index = 0
-  while movie_index < source[director_index][:movies].size
-    result[movie] = movies_with_director_key(source[director_index][:name],source[director_index][:movies])         
-    director_index += 1
+    while movie_index < source[director_index][:movies].size
+      result[movie_index] = movies_with_director_key(source[director_index][:name],source[director_index][:movies])         
+      director_index += 1
+    end
   end
   binding.pry
   # 
