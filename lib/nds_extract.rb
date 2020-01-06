@@ -102,21 +102,21 @@ def movies_with_directors_set(source)
   result = []
   
   while director_index < source.size
-  result[director_index] = movies_with_director_key(source[director_index][:name],source[director_index][:movies])         
-  director_index += 1
-end
-
-  director_index = 0 
-  while director_index < source.size
-    #director_name = source[director_index][:name]
-    movie_index = 0 
-    while movie_index < source[director_index][:movies].size
-      result[director_index] = movies_with_director_key(source[director_index][:name],source[director_index][:movies])            #source[director_index][:movies][movie_index]
-      movie_index += 1
-    end
+    result[director_index] = movies_with_director_key(source[director_index][:name],source[director_index][:movies])         
     director_index += 1
-    binding.pry
   end
+
+  # director_index = 0 
+  # while director_index < source.size
+  #   #director_name = source[director_index][:name]
+  #   movie_index = 0 
+  #   while movie_index < source[director_index][:movies].size
+  #     result[director_index] = movies_with_director_key(source[director_index][:name],source[director_index][:movies])            #source[director_index][:movies][movie_index]
+  #     movie_index += 1
+  #   end
+  #   director_index += 1
+  #   binding.pry
+  # end
 
     
   # RETURN:
