@@ -83,7 +83,7 @@ def gross_per_studio(collection)
   #   director_index += 1 
   # end
   # result 
-  
+  binding.pry
   
   # RETURN:
   #
@@ -106,7 +106,7 @@ def movies_with_directors_set(source)
     director_index += 1
   end
   result
-  #binding.pry
+  #
   # 
   # while director_index < source.size
   #   #director_name = source[director_index][:name]
