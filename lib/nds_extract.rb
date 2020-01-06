@@ -110,9 +110,9 @@ def movies_with_directors_set(source)
       #result[director_name] = source[director_index][:movies][movie_index]
       movie_index += 1
     end
-          binding.pry
     director_index += 1
-    
+              binding.pry
+
   end
 
     
