@@ -69,7 +69,17 @@ def gross_per_studio(collection)
   # * collection: Array of Hashes where each Hash where each Hash represents a movie
   #
   
+  result = {}
   
+  collection_index = 0
+  while  collection_index < collection.size
+  studio_name = collection[collection_index][:studio]
+  if result[studio_name] == studio_name
+  result[studio_name] = 0
+  else
+   result[studio_name] +=  collection[collection_index][:worldwide_gross]
+  collection_index += 1
+  end
   
  
   # director_index = 0 
