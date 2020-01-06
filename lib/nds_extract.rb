@@ -83,6 +83,8 @@ def gross_per_studio(collection)
   #   director_index += 1 
   # end
   # result 
+  
+  
   binding.pry
   
   # RETURN:
