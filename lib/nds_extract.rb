@@ -72,7 +72,7 @@ def gross_per_studio(collection)
   result = {}
   
   collection_index = 0
-  while  collection_index < collection.size
+  while  collection_index < collection.size do
     studio_name = collection[collection_index][:studio]
     if !result[studio_name]
       result[studio_name] = collection[collection_index][:worldwide_gross]
@@ -97,8 +97,7 @@ def gross_per_studio(collection)
   # result 
   
   
-  binding.pry
-  
+
   # RETURN:
   #
   # Hash whose keys are the studio names and whose values are the sum
