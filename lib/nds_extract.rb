@@ -107,7 +107,7 @@ def movies_with_directors_set(source)
     director_name = source[director_index][:name]
     movie_index = 0 
     while movie_index < source[director_index][:movies].size
-      result[director_name] = movies_with_director_key(director_name,source[director_index][:movies][movie_index][:title] ) #source[director_index][:movies][movie_index]
+      #result[director_name] = movies_with_director_key(director_name,source[director_index][:movies][movie_index][:title] ) #source[director_index][:movies][movie_index]
       movie_index += 1
     end
     director_index += 1
