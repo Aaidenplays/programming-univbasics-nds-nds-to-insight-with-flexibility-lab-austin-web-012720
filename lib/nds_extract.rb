@@ -81,7 +81,7 @@ def gross_per_studio(collection)
     end
       collection_index += 1
   end
-  
+  result
  
   # director_index = 0 
   # while director_index < collection.size
